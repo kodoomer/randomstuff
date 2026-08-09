@@ -2,7 +2,8 @@
 *v17.3* \
 **actually really important note:** this color will only appear on lobbies hosted by you
 1. **disable color check** \
-   among us has a built in color check function that applies the following formula to every color id that is not lower than colorCount: \
+   among us has a built in color check function that prevets using undefined colors \
+   by applying the following formula to every color id that is not lower than colorCount: \
    `colorId = (colorId + 1) % colorCount` (`colorCount = 18`) \
    to bypass this open `GameAssembly.dll` (located in the same folder as `Among Us.exe`) in any byte editor (ex. HxD) and replace bytes \
    `5a 18 7d 41` with `5a 18 48 90`. \
