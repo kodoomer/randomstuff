@@ -22,7 +22,7 @@
     // sets async callbacks on WebSocket.prototype.send and WebSocket().onmessage
     function websockCallback(sendCB, recvCB) {
       if (this._origSend) {
-        console.error("Only one WebSocket callback is allowed");
+        throw "Only one WebSocket callback is allowed";
         return;
       }
       this._origSend = WebSocket.prototype.send;
