@@ -1,2 +1,2 @@
 # randomstuff
-scripts / files and markdown files i made when i was bored
+scripts / files i made when i was bored
